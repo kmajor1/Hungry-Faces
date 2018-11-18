@@ -2,10 +2,26 @@
 
 body {
     background-color: #222629; 
+    color: white; 
     font-family: 'Bangers', cursive;
 
 }
-h1, h2 {
+
+header {
     background-color: #EC1C24; 
+    height: 75px; 
+}
+
+h1, h2 {
     color: white; 
+}
+
+p, span {
+    color: white; 
+    font-size: 12pt; 
+}
+
+#titleCard {
+    margin-bottom: 0; 
+    
 }
