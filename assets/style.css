@@ -7,6 +7,12 @@ body {
 
 }
 
+img {
+    max-width: 100%; 
+    width: auto; 
+    height: 400px; 
+}
+
 header {
     background-color: #EC1C24; 
     height: 75px; 
