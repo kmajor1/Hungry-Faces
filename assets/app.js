@@ -137,6 +137,10 @@ function marvelGen(imgData) {
 function uploadHandler(evt) {
             var files = evt.target.files;
             var file = files[0];
+            if (file.type !== 'image/jpeg') {
+                alert("Sorry, only JPEG file format is supported.");
+                return 
+            }
             var data = new FormData();
             // maybe add a loader 
             loader(false);
