@@ -69,14 +69,6 @@ input[type='file']:hover{
     border: 1px solid #F3B404;
  } */
 
-/* h1 {
-    color: white;
-    text-align: center;
-    font-family: 'Righteous', cursive;
-    font-size: 40px;
-    margin: 0px;
-    padding: 20px;   
-} */
 
 .getstarted {
     text-align: center;
@@ -99,7 +91,7 @@ input[type=text]:focus{
 
 img.resize {
     width: auto;
-    height: 400px;
+    height: 300px;
 }
 
 .loader {
