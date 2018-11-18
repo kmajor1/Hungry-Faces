@@ -119,10 +119,6 @@ function marvelGen(imgData) {
                 var urlPath = response.data.results[0].thumbnail.path;
                 var urlExtension = response.data.results[0].thumbnail.extension;
                 var marvelImage = urlPath + "." + urlExtension;
-                // var marvelName = response.data.results[0].name;
-                // var marvelNameDiv = ("<p>");
-                // marvelNameDiv.attr("class" , "name")
-                // $("#marvelImg").append(marvelName)
                 displayResults(userImgUrl, marvelImage);
             },function (err) {
                 console.log('There was an error:');
@@ -138,11 +134,10 @@ function uploadHandler(evt) {
             var files = evt.target.files;
             var file = files[0];
             if (file.type !== 'image/jpeg') {
-                alert("Sorry, only JPEG file format is supported.");
+                $("#imageError").modal(); 
                 return 
             }
             var data = new FormData();
-            // maybe add a loader 
             loader(false);
             // if files exist then load a filereader object, convert to binary string and store result 
             if (files && file) {
