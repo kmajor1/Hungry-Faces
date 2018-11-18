@@ -103,7 +103,7 @@ function marvelGen(imgData) {
             loader(true);
         }).then(function () {
             // this is where the marvel API call goes 
-            var apikeyMarvel = '96b65e16cae4310e026174023b8d08b1';
+            var apikeyMarvel = 'caa166d6b8ea854895a927e8c326603d';
             var timestamp = new Date().getTime();
             var marvelID = localStorage.getItem("CharID");
             var queryURL = "https://gateway.marvel.com:443/v1/public/characters/1009" + marvelID + "?apikey=" + apikeyMarvel + "&ts=" + timestamp;
