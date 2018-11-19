@@ -7,27 +7,47 @@ body {
 
 }
 
-img {
-    max-width: 100%; 
-    width: auto; 
-    height: 400px; 
-}
+
 
 header {
     background-color: #EC1C24; 
-    height: 75px; 
 }
 
 h1, h2 {
     color: white; 
+    font-size: 80px; 
+    margin: 0 auto; 
+    
+
 }
 
 p, span {
     color: white; 
-    font-size: 12pt; 
+    font-size: 20px; 
 }
 
-#titleCard {
-    margin-bottom: 0; 
-    
+.carousel-item h2 {
+    color: #222629;
+    text-align: center; 
 }
+
+.carousel-indicators > li.active {
+    background-color: red;  
+
+}
+
+.carousel-indicators > li:not(.active){
+    background-color: blue; 
+    opacity: 0.20; 
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
