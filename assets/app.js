@@ -1,4 +1,4 @@
-// v1.1
+// v1.2
 // Configure Firebase
 var config = {
     apiKey: "AIzaSyA9l_Xn-60I1ullS7D3MwKxPFFHDmsibso",
