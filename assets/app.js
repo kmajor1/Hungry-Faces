@@ -63,6 +63,8 @@ var displayResults = function (personImgUrl, marvelImgUrl) {
     personImgDiv.append(personImgTag);
     // hide the main image 
     document.getElementById('mainSplashImg').classList = "marveluniverse d-none";
+    // kill the carousel 
+    $("#explainer").carousel('dispose');
     // kill the loader
     loader(true);
 
