@@ -12,6 +12,11 @@ body {
 
 header {
     background-color: #EC1C24; 
+    margin-left: 10px; 
+    margin-right: 10px; 
+    display: relative; 
+    animation-name: fadeinHeader; 
+    animation-duration: 8s; 
 }
 
 h1, h2 {
@@ -25,6 +30,42 @@ h1, h2 {
 p, span {
     color: white; 
     font-size: 20px; 
+}
+
+/*  animations  */
+
+/* The animation code */
+@keyframes fadein {
+    from { color:#222629; }
+    to { color: white; }  
+}
+
+@keyframes fadeinHeader {
+    from {background-color: white;}
+    to {background-color: #EC1C24; }
+}
+
+/* The element to apply the animation to */
+.logo > h1 {
+    /* margin: 0 auto;  */
+    animation-name: fadein; 
+    animation-duration: 8s;
+    color: white; 
+}
+
+
+.logo h1 {
+    display: inline; 
+}
+
+.logo span {
+    float: right; 
+    vertical-align: text-bottom; 
+    bottom: 0px; 
+    position: relative; 
+    top: 60px; 
+    color: #222629;
+    font-size: 18pt; 
 }
 
 
