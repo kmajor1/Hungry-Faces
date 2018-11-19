@@ -175,7 +175,7 @@ function uploadHandler(evt) {
             });
 
             // call ajax func 
-           
+
         }
 
 
