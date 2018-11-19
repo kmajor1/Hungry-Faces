@@ -24,7 +24,15 @@ var auth = firebase.auth();
 // firebase storage references 
 var storageRef = firebase.storage().ref(); 
 
+// invoke carousel function 
+$(".carousel").carousel({
+    interval: 4000,
+    pause: false
+
+})
+
 // loader function 
+
 function loader (isLoaded) {
     if (!isLoaded) {
         document.getElementById('mainContentDiv').classList = "container faded";
