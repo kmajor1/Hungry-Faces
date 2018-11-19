@@ -1,4 +1,4 @@
-// v1.2
+// v1.3
 // Configure Firebase
 var config = {
     apiKey: "AIzaSyA9l_Xn-60I1ullS7D3MwKxPFFHDmsibso",
@@ -63,7 +63,7 @@ var displayResults = function (personImgUrl, marvelImgUrl) {
     personImgDiv.append(personImgTag);
     // hide the main image 
     // kill the carousel 
-    $("#explainer").carousel('dispose');
+    $(".carousel").carousel('dispose');
     // kill the loader
     loader(true);
 
