@@ -63,7 +63,8 @@ var displayResults = function (personImgUrl, marvelImgUrl) {
     personImgDiv.append(personImgTag);
     // hide the main image 
     // kill the carousel 
-    $(".carousel").carousel('dispose');
+    $("#explainerCarousel").carousel('dispose');
+    
     // kill the loader
     loader(true);
 
