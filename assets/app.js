@@ -1,4 +1,6 @@
 // v1.3
+
+
 // Configure Firebase
 var config = {
     apiKey: "AIzaSyA9l_Xn-60I1ullS7D3MwKxPFFHDmsibso",
@@ -52,6 +54,9 @@ var displayResults = function (personImgUrl, marvelImgUrl) {
     $("#explainerCarousel").carousel('dispose');
     
     // kill the loader
+    var target = document.getElementById('mainContentDiv');
+    loader.stop(target)
+    
 
 }
 
@@ -130,6 +135,9 @@ function uploadHandler(evt) {
                 $("#imageError").modal(); 
                 return 
             }
+            // instantiate spinner 
+            var target = document.getElementById('mainContentDiv');
+            loader.spin(target);
             var data = new FormData();
             // if files exist then load a filereader object, convert to binary string and store result 
             if (files && file) {
