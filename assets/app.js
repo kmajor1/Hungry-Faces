@@ -31,20 +31,6 @@ $(".carousel").carousel({
 
 })
 
-// loader function 
-
-function loader (isLoaded) {
-    if (!isLoaded) {
-        document.getElementById('mainContentDiv').classList = "container faded";
-        document.getElementById('loaderDiv').classList = "loader"
-    }
-    else {
-        // put off here later
-        document.getElementById('mainContentDiv').classList = "container";
-        document.getElementById('loaderDiv').classList = "d-none";
-    }
-}
-
 // display results function 
 // shows image elements returned by APIs
 var displayResults = function (personImgUrl, marvelImgUrl) {
@@ -66,7 +52,6 @@ var displayResults = function (personImgUrl, marvelImgUrl) {
     $("#explainerCarousel").carousel('dispose');
     
     // kill the loader
-    loader(true);
 
 }
 
@@ -91,7 +76,6 @@ function marvelGen(imgData) {
     function (err) {
         console.log('There was an error: ' +err);
         // kill the loader, refresh page 
-        loader(true);
     }).then(function (tokenToUse) {
         var analyzeUrl = 'https://api-us.faceplusplus.com/facepp/v3/face/analyze?&api_key=' + api_keyFpp + "&api_secret=" + api_secretFpp + '&face_tokens=' + tokenToUse + '&return_attributes=' + attr_returnFpp;
         $.ajax({
@@ -111,7 +95,6 @@ function marvelGen(imgData) {
         function (err) {
             console.log('There was an error: ' + err);
             // kill the loader, refresh page 
-            loader(true);
         }).then(function () {
             // this is where the marvel API call goes 
             var apikeyMarvel = 'caa166d6b8ea854895a927e8c326603d';
@@ -135,7 +118,6 @@ function marvelGen(imgData) {
                 console.log('There was an error:');
                 console.log(err.responseJSON);
                 // kill the loader refresh the page 
-                loader(true);
             })
             })}
 
@@ -149,7 +131,6 @@ function uploadHandler(evt) {
                 return 
             }
             var data = new FormData();
-            loader(false);
             // if files exist then load a filereader object, convert to binary string and store result 
             if (files && file) {
                 // append the files to the form data
