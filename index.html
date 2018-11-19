@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- v1.0 -->
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,8 +19,8 @@
     <header class="my-2 text-center">
         <h1 id="titleCard" class="px-2 clearfix text-center">Mavatar!</h1>
         <div>
-                <span class="px-2">Brought to you by your friendly neighbourhood
-                        Facial Analysis AI!</span>
+            <span class="px-2">Brought to you by your friendly neighbourhood
+                Facial Analysis AI!</span>
         </div>
     </header>
 
@@ -64,18 +65,18 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                                <img class="d-block w-50 mx-auto" src="./assets/images/nerd-dance.jpg" alt="Second slide">
-                                <div id="carouselItem2Overlay" class="centered">
-                                    <h2>Turn this...</h2>
-                                </div>
+                            <img class="d-block w-50 mx-auto" src="./assets/images/nerd-dance.jpg" alt="Second slide">
+                            <div id="carouselItem2Overlay" class="centered">
+                                <h2>Turn this...</h2>
                             </div>
+                        </div>
                         <div class="carousel-item">
                             <img class="d-block w-50 mx-auto" src="./assets/images/cptamerica.jpg" alt="Second slide">
                             <div id="carouselItem3Overlay" class="centered">
                                 <h2>...into this!</h2>
                             </div>
                         </div>
-                        
+
 
                     </div>
                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -92,10 +93,23 @@
         </div>
         <!-- end of carousel  -->
 
-        <div class="row mb-4">
-            <div class="col-6 text-center mx-auto">
-                <form class="mx-auto" id="formUploadControl">
-                    <input type="file" id="filePicker" name="image_file">
+        <div id="uploadContainer" class="row mb-4">
+
+            <div class="col-6 mx-auto">
+                <form id="formUploadControl">
+                    <div class="form-group">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="inputGroupFileAddon01">Upload an image:</span>
+                            </div>
+                            <div class="custom-file">
+                                <input type="file" id="filePicker" name="image_file" class="custom-file-input" id="inputGroupFile01"
+                                    aria-describedby="inputGroupFileAddon01">
+                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                            </div>
+                        </div>
+                    </div>
+
                 </form>
             </div>
         </div>
